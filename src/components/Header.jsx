@@ -3,7 +3,7 @@ import { FaGithub } from "react-icons/fa";
 
 export default function Header() {
   return (
-    <div className=" text-base font-normal h-[96px] bg-stone-900 border-2 border-rose-500 text-white text-center font-sans pt-6 flex justify-around items-center flex-wrap px-4 overflow-hidden">
+    <div className=" text-base font-normal h-[96px] bg-stone-900  text-white text-center font-sans pt-6 flex justify-around items-center flex-wrap px-4 overflow-hidden">
       <div className=" font-poppins ">
         <a href="" className="p-4">
           Header
