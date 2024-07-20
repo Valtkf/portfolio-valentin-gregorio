@@ -28,19 +28,80 @@ export default function Body() {
           </div>
         </div>
         <div
-          className="w-full h-full bg-cover bg-center bg-gradient-to-r from-zinc-700 to-red-300 col-span-3 sm:col-span-3 md:col-span-3 lg:col-span-2 xl:col-span-2 row-span-3 bg-indigo-200 rounded-3xl flex justify-center items-center p-4"
+          className="w-full h-full bg-cover bg-center bg-no-repeat bg-gradient-to-r from-zinc-700 to-red-300 col-span-3 sm:col-span-3 md:col-span-3 lg:col-span-2 xl:col-span-2 row-span-3 bg-indigo-200 rounded-3xl flex justify-center items-center p-4"
           style={{
             backgroundImage: "url('/images/mockupcrazeeburger.png')",
+            backgroundSize: "contain",
           }}
         ></div>
-        <div className="bg-gradient-to-r from-slate-900 to-slate-700 col-span-3 sm:col-span-1 md:col-span-1 lg:col-span-1 xl:col-span-1 row-span-3 bg-indigo-200 rounded-3xl flex justify-center items-center p-4 text-white">
-          technos
+        <div className="bg-gradient-to-r from-slate-900 to-slate-700 col-span-3 sm:col-span-1 md:col-span-1 lg:col-span-1 xl:col-span-1 row-span-3 bg-indigo-200 rounded-3xl flex justify-center items-center p-8 text-white">
+          <div className="grid grid-cols-2 gap-4 w-full h-full">
+            <div
+              className="bg-center bg-no-repeat"
+              style={{
+                backgroundImage: "url('/images/icons8-react-native.svg')",
+                backgroundSize: "contain",
+              }}
+            ></div>
+            <div
+              className="bg-center bg-no-repeat"
+              style={{
+                backgroundImage: "url('/images/icons-tailwind-css.svg')",
+                backgroundSize: "contain",
+              }}
+            ></div>
+            <div
+              className="bg-center bg-no-repeat"
+              style={{
+                backgroundImage: "url('/images/icons-typescript.svg')",
+                backgroundSize: "contain",
+              }}
+            ></div>
+            <div
+              className="bg-center bg-no-repeat"
+              style={{
+                backgroundImage: "url('/images/icons-nextjs.svg')",
+                backgroundSize: "contain",
+              }}
+            ></div>
+            <div
+              className="bg-center bg-no-repeat"
+              style={{
+                backgroundImage: "url('/images/styled-components.svg')",
+                backgroundSize: "contain",
+              }}
+            ></div>
+          </div>
         </div>
+
         <div className="bg-gradient-to-r from-blue-200 to-cyan-200 col-span-3 sm:col-span-2 md:col-span-2 lg:col-span-3 row-span-3 bg-indigo-200 rounded-3xl flex justify-center items-center p-4">
           parcours
         </div>
         <div className="bg-gradient-to-r from-slate-500 to-slate-800 col-span-3 sm:col-span-3 md:col-span-3 lg:col-span-3 row-span-3 bg-indigo-200 rounded-3xl flex justify-center items-center p-4">
-          réseaux
+          <div className="text-white mr-4">réseaux</div>
+          <div className="flex space-x-4">
+            <div
+              className="w-12 h-12 bg-center bg-no-repeat"
+              style={{
+                backgroundImage: "url('/images/icons-x.svg')",
+                backgroundSize: "contain",
+              }}
+            ></div>
+            <div
+              className="w-12 h-12 bg-center bg-no-repeat"
+              style={{
+                backgroundImage: "url('/images/icons-linkedin.svg')",
+                backgroundSize: "contain",
+              }}
+            ></div>
+            <div
+              className="w-12 h-12 bg-center bg-no-repeat"
+              style={{
+                backgroundImage: "url('/images/icons-github.svg')",
+                backgroundSize: "contain",
+              }}
+            ></div>
+          </div>
         </div>
       </div>
     </div>
