@@ -9,6 +9,7 @@ export default function Body() {
         }}
       >
         <div
+          id="header"
           className="relative col-span-3 md:col-span-3 row-span-1 bg-indigo-200 rounded-3xl flex justify-center items-center text-white"
           style={{
             backgroundImage:
@@ -31,6 +32,7 @@ export default function Body() {
           </div>
         </div>
         <div
+          id="projects"
           className="w-full h-full bg-cover bg-center bg-no-repeat bg-gradient-to-r from-zinc-700 to-red-300 col-span-3 sm:col-span-3 md:col-span-3 lg:col-span-2 xl:col-span-2 row-span-3 bg-indigo-200 rounded-3xl flex justify-center items-center p-4"
           style={{
             backgroundImage: "url('/images/mockupcrazeeburger.png')",
@@ -78,6 +80,7 @@ export default function Body() {
         </div>
 
         <div
+          id="about"
           className="bg-gradient-to-r from-blue-200 to-cyan-200 col-span-3 sm:col-span-2 md:col-span-2 lg:col-span-3 row-span-3 bg-indigo-200 rounded-3xl text-center flex flex-col justify-center items-center p-4"
           style={{ textShadow: "1px 1px 2px rgba(0, 0, 0, 0.5)" }}
         >
@@ -92,7 +95,10 @@ export default function Body() {
             de mon code tout en faisant un travaille de veille technologique.
           </p>
         </div>
-        <div className="bg-gradient-to-r from-slate-500 to-slate-800 col-span-3 sm:col-span-3 md:col-span-3 lg:col-span-3 row-span-3 bg-indigo-200 rounded-3xl flex justify-center items-center flex-col p-4">
+        <div
+          id="contact"
+          className="bg-gradient-to-r from-slate-500 to-slate-800 col-span-3 sm:col-span-3 md:col-span-3 lg:col-span-3 row-span-3 bg-indigo-200 rounded-3xl flex justify-center items-center flex-col p-4"
+        >
           <div className="text-white border-b-[1px] border-white font-poppins text-xl md:text-2xl font-semibold mr-4 mb-4">
             <h1>Réseaux</h1>
           </div>
