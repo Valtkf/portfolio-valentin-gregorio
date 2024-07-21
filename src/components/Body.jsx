@@ -77,30 +77,38 @@ export default function Body() {
         <div className="bg-gradient-to-r from-blue-200 to-cyan-200 col-span-3 sm:col-span-2 md:col-span-2 lg:col-span-3 row-span-3 bg-indigo-200 rounded-3xl flex justify-center items-center p-4">
           parcours
         </div>
-        <div className="bg-gradient-to-r from-slate-500 to-slate-800 col-span-3 sm:col-span-3 md:col-span-3 lg:col-span-3 row-span-3 bg-indigo-200 rounded-3xl flex justify-center items-center p-4">
-          <div className="text-white mr-4">réseaux</div>
+        <div className="bg-gradient-to-r from-slate-500 to-slate-800 col-span-3 sm:col-span-3 md:col-span-3 lg:col-span-3 row-span-3 bg-indigo-200 rounded-3xl flex justify-center items-center flex-col p-4">
+          <div className="text-white border-b-[1px] border-white font-poppins text-xl md:text-2xl font-semibold mr-4 mb-4">
+            <h1>Réseaux</h1>
+          </div>
           <div className="flex space-x-4">
-            <div
-              className="w-12 h-12 bg-center bg-no-repeat"
-              style={{
-                backgroundImage: "url('/images/icons-x.svg')",
-                backgroundSize: "contain",
-              }}
-            ></div>
-            <div
-              className="w-12 h-12 bg-center bg-no-repeat"
-              style={{
-                backgroundImage: "url('/images/icons-linkedin.svg')",
-                backgroundSize: "contain",
-              }}
-            ></div>
-            <div
-              className="w-12 h-12 bg-center bg-no-repeat"
-              style={{
-                backgroundImage: "url('/images/icons-github.svg')",
-                backgroundSize: "contain",
-              }}
-            ></div>
+            <a href="https://x.com/Grego13Valentin">
+              <div
+                className="w-12 h-12 bg-center bg-no-repeat"
+                style={{
+                  backgroundImage: "url('/images/icons-x.svg')",
+                  backgroundSize: "contain",
+                }}
+              ></div>
+            </a>
+            <a href="https://www.linkedin.com/in/valentin-gregorio-33510826a/">
+              <div
+                className="w-12 h-12 bg-center bg-no-repeat"
+                style={{
+                  backgroundImage: "url('/images/icons-linkedin.svg')",
+                  backgroundSize: "contain",
+                }}
+              ></div>
+            </a>
+            <a href="https://github.com/Valtkf">
+              <div
+                className="w-12 h-12 bg-center bg-no-repeat"
+                style={{
+                  backgroundImage: "url('/images/icons-github.svg')",
+                  backgroundSize: "contain",
+                }}
+              ></div>
+            </a>
           </div>
         </div>
       </div>
