@@ -1,38 +1,84 @@
-import { AiOutlineLinkedin } from "react-icons/ai";
-import { FaGithub } from "react-icons/fa";
+import { useState } from "react";
+import { motion } from "framer-motion";
 
 export default function Header() {
+  const [activeTab, setActiveTab] = useState("");
+
+  const handleClick = (tab) => {
+    setActiveTab(tab);
+    scrollToElement(tab);
+  };
+
+  const scrollToElement = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
-    <div className=" text-base font-normal h-[96px] bg-stone-900  text-white text-center font-sans pt-6 flex justify-around items-center flex-wrap px-4 overflow-hidden">
-      <div className=" font-poppins ">
-        <a href="" className="p-4">
+    <div className="m-auto z-10 fixed top-0 left-0 w-full overflow-hidden bg-stone-900 text-white p-4 flex justify-center items-center h-20">
+      <div className="text-2xl rounded-full border-[1px] border-stone-500 p-2 h-full flex items-center justify-center">
+        <motion.a
+          href="#header"
+          className={`pr-4 pl-4 ${
+            activeTab === "header" ? "bg-stone-700 rounded-xl" : ""
+          }`}
+          onClick={() => handleClick("header")}
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+          style={{
+            transition: "background-color 0.4s ease",
+            fontSize: "1.25rem",
+          }}
+        >
           Header
-        </a>
-        <a href="" className="p-4">
+        </motion.a>
+        <motion.a
+          href="#about"
+          className={`pr-4 pl-4 ${
+            activeTab === "about" ? "bg-stone-700 rounded-xl" : ""
+          }`}
+          onClick={() => handleClick("about")}
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+          style={{
+            transition: "background-color 0.4s ease",
+            fontSize: "1.25rem",
+          }}
+        >
           About
-        </a>
-        <a href="" className="p-4">
+        </motion.a>
+        <motion.a
+          href="#projects"
+          className={`pr-4 pl-4 ${
+            activeTab === "projects" ? "bg-stone-700 rounded-xl" : ""
+          }`}
+          onClick={() => handleClick("projects")}
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+          style={{
+            transition: "background-color 0.4s ease",
+            fontSize: "1.25rem",
+          }}
+        >
           Projects
-        </a>
-        <a href="" className="p-4">
+        </motion.a>
+        <motion.a
+          href="#contact"
+          className={`pr-4 pl-4 ${
+            activeTab === "contact" ? "bg-stone-700 rounded-xl" : ""
+          }`}
+          onClick={() => handleClick("contact")}
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+          style={{
+            transition: "background-color 0.4s ease",
+            fontSize: "1.25rem",
+          }}
+        >
           Contact
-        </a>
-      </div>
-      <div className="flex items-center  gap-6 ">
-        <a
-          href="https://www.linkedin.com/in/valentin-gregorio-33510826a/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <AiOutlineLinkedin />
-        </a>
-        <a
-          href="https://github.com/Valtkf"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaGithub />
-        </a>
+        </motion.a>
       </div>
     </div>
   );
