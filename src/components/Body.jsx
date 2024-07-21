@@ -20,10 +20,10 @@ export default function Body() {
         >
           <div className="absolute inset-0 bg-black opacity-55 rounded-3xl"></div>
           <div className="relative z-9 text-center p-4">
-            <h1 className="font-poppins text-4xl font-semibold p-2">
+            <h1 className="font-poppins sm:text-4xl font-semibold p-2">
               Valentin Gregorio
             </h1>
-            <h2 className="border-t-[1px] border-white font-poppins text-3xl font-semibold p-2">
+            <h2 className="border-t-[1px] border-white font-poppins sm:text-3xl font-semibold p-2">
               Développeur Front End
             </h2>
             <div className="mt-10 text-stone-300 font-poppins text-xl font-medium">
