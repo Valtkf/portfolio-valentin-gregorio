@@ -2,7 +2,7 @@ export default function Body() {
   return (
     <div className="min-h-screen w-full  bg-stone-900 flex items-center justify-center p-10">
       <div
-        className="grid h-full w-full gap-4"
+        className="grid h-full w-full gap-4 mt-20"
         style={{
           gridTemplateColumns: "repeat(3, 1fr)", // 3 colonnes égales
           gridTemplateRows: "250px 200px 250px 200px 200px 200px 200px 200px", // Hauteur des rangées en pixels
@@ -18,13 +18,16 @@ export default function Body() {
           }}
         >
           <div className="absolute inset-0 bg-black opacity-55 rounded-3xl"></div>
-          <div className="relative z-10 text-center p-4">
-            <h1 className="font-poppins text-xl md:text-2xl font-semibold p-2">
+          <div className="relative z-9 text-center p-4">
+            <h1 className="font-poppins text-4xl font-semibold p-2">
               Valentin Gregorio
             </h1>
-            <h2 className="border-t-[1px] border-white font-poppins text-lg md:text-xl font-semibold p-2">
+            <h2 className="border-t-[1px] border-white font-poppins text-3xl font-semibold p-2">
               Développeur Front End
             </h2>
+            <div className="mt-10 text-stone-300 font-poppins text-xl font-medium">
+              Recherche une mission freelance
+            </div>
           </div>
         </div>
         <div
@@ -74,8 +77,20 @@ export default function Body() {
           </div>
         </div>
 
-        <div className="bg-gradient-to-r from-blue-200 to-cyan-200 col-span-3 sm:col-span-2 md:col-span-2 lg:col-span-3 row-span-3 bg-indigo-200 rounded-3xl flex justify-center items-center p-4">
-          parcours
+        <div
+          className="bg-gradient-to-r from-blue-200 to-cyan-200 col-span-3 sm:col-span-2 md:col-span-2 lg:col-span-3 row-span-3 bg-indigo-200 rounded-3xl text-center flex flex-col justify-center items-center p-4"
+          style={{ textShadow: "1px 1px 2px rgba(0, 0, 0, 0.5)" }}
+        >
+          <h1 className="text-white text-4xl font-semibold mb-8 border-b-2 border-white p-4">
+            Mon parcours
+          </h1>
+          <p className="text-white text-2xl font-semibold p-4">
+            Ayant fait mon apprentissage en autodidacte , j'ai suivis des
+            formations en ligne qui m'ont permis de me spécialiser sur des
+            technologies telles que React , Typescript et Nextjs. Je cherche
+            également à me perfectionner et améliorer toujours plus la qualité
+            de mon code tout en faisant un travaille de veille technologique.
+          </p>
         </div>
         <div className="bg-gradient-to-r from-slate-500 to-slate-800 col-span-3 sm:col-span-3 md:col-span-3 lg:col-span-3 row-span-3 bg-indigo-200 rounded-3xl flex justify-center items-center flex-col p-4">
           <div className="text-white border-b-[1px] border-white font-poppins text-xl md:text-2xl font-semibold mr-4 mb-4">
